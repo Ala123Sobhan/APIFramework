@@ -1,0 +1,69 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-22T23:42:14.092Z",
+        "line": 3,
+        "name": "Verify Place is being successfully added using AddPlaceApi",
+        "description": "",
+        "id": "validation-place-api;verify-place-is-being-successfully-added-using-addplaceapi",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "Add place payload is ready",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user calls \"AddPlaceAPI\" with Post http request",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the API call returns status code 200",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "the \"status\" in response body is \"OK\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "the \"scope\" in response body is \"APP\"",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Validation Place API",
+    "description": "",
+    "id": "validation-place-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/placeValidation.feature",
+    "tags": []
+  }
+]
