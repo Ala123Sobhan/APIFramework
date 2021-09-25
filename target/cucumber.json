@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-09-22T23:42:14.092Z",
+        "start_timestamp": "2021-09-25T14:36:02.665Z",
         "line": 3,
         "name": "Verify Place is being successfully added using AddPlaceApi",
         "description": "",
@@ -13,47 +13,94 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 1764000000,
+              "status": "passed"
             },
             "line": 4,
             "name": "Add place payload is ready",
-            "match": {},
+            "match": {
+              "location": "stepDef.addPlace.add_place_payload_is_ready()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3678000000,
+              "status": "passed"
             },
             "line": 5,
             "name": "user calls \"AddPlaceAPI\" with Post http request",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDef.addPlace.user_calls_with_post_http_request(java.lang.String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2000000,
+              "status": "passed"
             },
             "line": 6,
             "name": "the API call returns status code 200",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDef.addPlace.the_api_call_returns_status_code(int)"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 834000000,
+              "status": "passed"
             },
             "line": 7,
             "name": "the \"status\" in response body is \"OK\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 4
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDef.addPlace.the_in_response_body_is(java.lang.String,java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 16000000,
+              "status": "passed"
             },
             "line": 8,
             "name": "the \"scope\" in response body is \"APP\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"scope\"",
+                  "offset": 4
+                },
+                {
+                  "val": "\"APP\"",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDef.addPlace.the_in_response_body_is(java.lang.String,java.lang.String)"
+            },
             "keyword": "And "
           }
         ]

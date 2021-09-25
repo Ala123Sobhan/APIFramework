@@ -1,0 +1,6 @@
+pojo\AddAPlace.class
+resources\TestData.class
+resources\Utils.class
+stepDef\addPlace.class
+pojo\location.class
+TestRunner.class
