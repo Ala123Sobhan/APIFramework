@@ -1,0 +1,47 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "location": {
+        "lat": -38.383494,
+        "lng": 33.435353
+    },
+    "accuracy": 60,
+    "name": "1567 metro north bookiyklo",
+    "phone_number": "9175610897",
+    "address": "28, side layout boo",
+    "types": [
+        "shop",
+        "shoe market"
+    ],
+    "website": "http://google.com",
+    "language": "Bengali"
+}
+HTTP/1.1 200 OK
+Date: Mon, 27 Sep 2021 16:20:38 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "187f887caaa8dbf044e6ef6fbe12b9a7",
+    "scope": "APP",
+    "reference": "5112eb6505c520951b614d3e64819a315112eb6505c520951b614d3e64819a31",
+    "id": "5112eb6505c520951b614d3e64819a31"
+}
