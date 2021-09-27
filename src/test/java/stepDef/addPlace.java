@@ -13,6 +13,7 @@ import io.restassured.specification.ResponseSpecification;
 import org.testng.Assert;
 import pojo.AddAPlace;
 import pojo.location;
+import resources.APIResources;
 import resources.TestData;
 import resources.Utils;
 
@@ -40,18 +41,35 @@ public class addPlace extends Utils {
                 .body(d.addPlace(name, address, language));
     }
 
-    @When("user calls {string} with Post http request")
-    public void user_calls_with_post_http_request(String string) {
+    @When("^user calls \"([^\"]*)\" with \"([^\"]*)\" http request$")
+    public void user_calls_something_with_something_http_request(String resource, String method) throws Throwable {
+
+        APIResources resourcesAPI = APIResources.valueOf(resource);
 
         responseSpec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON)
                 .build();
-        response = res.when()
-                .post("/maps/api/place/add/json")
-                .then().spec(responseSpec).extract().response();
+
+        if (method.equalsIgnoreCase("Post")) {
+            response = res.when()
+                    .post(resourcesAPI.getResource())
+                    .then().spec(responseSpec).extract().response();
+        }
+        else if(method.equalsIgnoreCase("Get"))
+        {
+            response = res.when()
+                    .get(resourcesAPI.getResource())
+                    .then().spec(responseSpec).extract().response();
+        }
+        else {
+            response = res.when()
+                    .delete(resourcesAPI.getResource())
+                    .then().spec(responseSpec).extract().response();
+        }
     }
 
     @Then("the API call returns status code {int}")
     public void the_api_call_returns_status_code(int stscode) {
+
         Assert.assertEquals(response.getStatusCode(), stscode);
     }
 

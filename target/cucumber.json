@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-09-27T17:01:03.728Z",
+        "start_timestamp": "2021-09-27T23:35:28.328Z",
         "line": 12,
         "name": "Verify Place is being successfully added using AddPlaceApi",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1652000000,
+              "duration": 1656000000,
               "status": "passed"
             },
             "line": 4,
@@ -39,25 +39,29 @@
           },
           {
             "result": {
-              "duration": 3709000000,
+              "duration": 3379000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "user calls \"AddPlaceAPI\" with Post http request",
+            "name": "user calls \"AddPlaceAPI\" with \"Post\" http request",
             "match": {
               "arguments": [
                 {
-                  "val": "\"AddPlaceAPI\"",
-                  "offset": 11
+                  "val": "AddPlaceAPI",
+                  "offset": 12
+                },
+                {
+                  "val": "Post",
+                  "offset": 31
                 }
               ],
-              "location": "stepDef.addPlace.user_calls_with_post_http_request(java.lang.String)"
+              "location": "stepDef.addPlace.user_calls_something_with_something_http_request(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1000000,
+              "duration": 3000000,
               "status": "passed"
             },
             "line": 6,
@@ -75,7 +79,7 @@
           },
           {
             "result": {
-              "duration": 770000000,
+              "duration": 829000000,
               "status": "passed"
             },
             "line": 7,
@@ -97,7 +101,7 @@
           },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 17000000,
               "status": "passed"
             },
             "line": 8,
@@ -120,7 +124,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-09-27T17:01:09.909Z",
+        "start_timestamp": "2021-09-27T23:35:34.247Z",
         "line": 13,
         "name": "Verify Place is being successfully added using AddPlaceApi",
         "description": "",
@@ -130,7 +134,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8000000,
+              "duration": 6000000,
               "status": "passed"
             },
             "line": 4,
@@ -156,19 +160,23 @@
           },
           {
             "result": {
-              "duration": 1456000000,
+              "duration": 1283000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "user calls \"AddPlaceAPI\" with Post http request",
+            "name": "user calls \"AddPlaceAPI\" with \"Post\" http request",
             "match": {
               "arguments": [
                 {
-                  "val": "\"AddPlaceAPI\"",
-                  "offset": 11
+                  "val": "AddPlaceAPI",
+                  "offset": 12
+                },
+                {
+                  "val": "Post",
+                  "offset": 31
                 }
               ],
-              "location": "stepDef.addPlace.user_calls_with_post_http_request(java.lang.String)"
+              "location": "stepDef.addPlace.user_calls_something_with_something_http_request(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
@@ -191,7 +199,7 @@
           },
           {
             "result": {
-              "duration": 36000000,
+              "duration": 34000000,
               "status": "passed"
             },
             "line": 7,
@@ -213,7 +221,7 @@
           },
           {
             "result": {
-              "duration": 49000000,
+              "duration": 41000000,
               "status": "passed"
             },
             "line": 8,
