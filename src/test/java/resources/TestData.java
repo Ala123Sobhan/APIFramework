@@ -8,7 +8,7 @@ import java.util.List;
 
 public class TestData {
 
-    public AddAPlace addPlace(){
+    public AddAPlace addPlace(String name, String add, String language){
         AddAPlace ap = new AddAPlace();
         location l = new location();
         l.setLat(-38.383494);
@@ -16,13 +16,13 @@ public class TestData {
 
         ap.setLocation(l);
         ap.setAccuracy(60);
-        ap.setName("1567 metro north bookiyklo");
+        ap.setName(name);
         ap.setPhone_number("9175610897");
-        ap.setAddress("28, side layout boo");
+        ap.setAddress(add);
         List<String> list = Arrays.asList("shop", "shoe market");
         ap.setTypes(list);
         ap.setWebsite("http://google.com");
-        ap.setLanguage("Bengali");
+        ap.setLanguage(language);
 
         return ap;
     }

@@ -19,6 +19,7 @@ import resources.Utils;
 import static io.restassured.RestAssured.given;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
@@ -29,13 +30,14 @@ public class addPlace extends Utils {
     RequestSpecification res;
     Response response;
 
-    @Given("Add place payload is ready")
-    public void add_place_payload_is_ready() throws FileNotFoundException {
+
+    @Given("^Add place payload with (.+) , (.+) and (.+)$")
+    public void add_place_payload_with_and(String name, String address, String language) throws Throwable {
 
         TestData d = new TestData();
 
         res = given().spec(getRequestSpecification())
-                .body(d.addPlace());
+                .body(d.addPlace(name, address, language));
     }
 
     @When("user calls {string} with Post http request")

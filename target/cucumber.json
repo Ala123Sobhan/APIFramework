@@ -3,29 +3,43 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-09-25T14:36:02.665Z",
-        "line": 3,
+        "start_timestamp": "2021-09-27T17:01:03.728Z",
+        "line": 12,
         "name": "Verify Place is being successfully added using AddPlaceApi",
         "description": "",
-        "id": "validation-place-api;verify-place-is-being-successfully-added-using-addplaceapi",
+        "id": "validation-place-api;verify-place-is-being-successfully-added-using-addplaceapi;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1764000000,
+              "duration": 1652000000,
               "status": "passed"
             },
             "line": 4,
-            "name": "Add place payload is ready",
+            "name": "Add place payload with Frame House , Bronx, NY and English",
             "match": {
-              "location": "stepDef.addPlace.add_place_payload_is_ready()"
+              "arguments": [
+                {
+                  "val": "Frame House",
+                  "offset": 23
+                },
+                {
+                  "val": "Bronx, NY",
+                  "offset": 37
+                },
+                {
+                  "val": "English",
+                  "offset": 51
+                }
+              ],
+              "location": "stepDef.addPlace.add_place_payload_with_and(java.lang.String,java.lang.String,java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 3678000000,
+              "duration": 3709000000,
               "status": "passed"
             },
             "line": 5,
@@ -43,7 +57,7 @@
           },
           {
             "result": {
-              "duration": 2000000,
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 6,
@@ -61,7 +75,7 @@
           },
           {
             "result": {
-              "duration": 834000000,
+              "duration": 770000000,
               "status": "passed"
             },
             "line": 7,
@@ -84,6 +98,122 @@
           {
             "result": {
               "duration": 16000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the \"scope\" in response body is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"scope\"",
+                  "offset": 4
+                },
+                {
+                  "val": "\"APP\"",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDef.addPlace.the_in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-27T17:01:09.909Z",
+        "line": 13,
+        "name": "Verify Place is being successfully added using AddPlaceApi",
+        "description": "",
+        "id": "validation-place-api;verify-place-is-being-successfully-added-using-addplaceapi;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Add place payload with AID Coching , Dhaka, Ban and Bengali",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AID Coching",
+                  "offset": 23
+                },
+                {
+                  "val": "Dhaka, Ban",
+                  "offset": 37
+                },
+                {
+                  "val": "Bengali",
+                  "offset": 52
+                }
+              ],
+              "location": "stepDef.addPlace.add_place_payload_with_and(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1456000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user calls \"AddPlaceAPI\" with Post http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDef.addPlace.user_calls_with_post_http_request(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the API call returns status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDef.addPlace.the_api_call_returns_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 36000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the \"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 4
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDef.addPlace.the_in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 49000000,
               "status": "passed"
             },
             "line": 8,
