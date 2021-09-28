@@ -31,12 +31,11 @@ public class addPlace extends Utils {
     ResponseSpecification responseSpec;
     RequestSpecification res;
     Response response;
-
+    TestData d = new TestData();
+    static String placeID;
 
     @Given("^Add place payload with (.+) , (.+) and (.+)$")
     public void add_place_payload_with_and(String name, String address, String language) throws Throwable {
-
-        TestData d = new TestData();
 
         res = given().spec(getRequestSpecification())
                 .body(d.addPlace(name, address, language));
@@ -60,11 +59,7 @@ public class addPlace extends Utils {
                     .get(resourcesAPI.getResource());
 
         }
-        else {
-            response = res.when()
-                    .delete(resourcesAPI.getResource());
 
-        }
     }
 
     @Then("the API call returns status code {int}")
@@ -85,7 +80,7 @@ public class addPlace extends Utils {
 
         APIResources resourcesAPI = APIResources.valueOf(resource);
 
-        String placeID = getJsonPath(response, place_id);
+         placeID = getJsonPath(response, place_id);
         res = given().spec(getRequestSpecification())
                 .queryParam("place_id",placeID);
 
@@ -97,6 +92,12 @@ public class addPlace extends Utils {
         Assert.assertEquals(actualName, Expectedname);
 
 
+    }
+
+    @Given("^Delete Place API payload is ready$")
+    public void delete_place_api_payload_is_ready() throws Throwable {
+        res = given().spec(getRequestSpecification())
+                .body(d.getDeletePayload(placeID));
     }
 
 

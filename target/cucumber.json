@@ -3,56 +3,42 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-09-27T23:38:36.464Z",
-        "line": 12,
-        "name": "Verify Place is being successfully added using AddPlaceApi",
+        "start_timestamp": "2021-09-28T18:44:17.801Z",
+        "line": 19,
+        "name": "Verify Delete Place API is working",
         "description": "",
-        "id": "validation-place-api;verify-place-is-being-successfully-added-using-addplaceapi;;2",
+        "id": "validation-place-api;verify-delete-place-api-is-working",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1678000000,
+              "duration": 1520000000,
               "status": "passed"
             },
-            "line": 4,
-            "name": "Add place payload with Frame House , Bronx, NY and English",
+            "line": 20,
+            "name": "Delete Place API payload is ready",
             "match": {
-              "arguments": [
-                {
-                  "val": "Frame House",
-                  "offset": 23
-                },
-                {
-                  "val": "Bronx, NY",
-                  "offset": 37
-                },
-                {
-                  "val": "English",
-                  "offset": 51
-                }
-              ],
-              "location": "stepDef.addPlace.add_place_payload_with_and(java.lang.String,java.lang.String,java.lang.String)"
+              "location": "stepDef.addPlace.delete_place_api_payload_is_ready()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 4249000000,
+              "duration": 4455000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "user calls \"AddPlaceAPI\" with \"Post\" http request",
+            "line": 21,
+            "name": "user calls \"deletePlaceAPI\" with \"Post\" http request",
             "match": {
               "arguments": [
                 {
-                  "val": "AddPlaceAPI",
+                  "val": "deletePlaceAPI",
                   "offset": 12
                 },
                 {
                   "val": "Post",
-                  "offset": 31
+                  "offset": 34
                 }
               ],
               "location": "stepDef.addPlace.user_calls_something_with_something_http_request(java.lang.String,java.lang.String)"
@@ -61,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 4000000,
+              "duration": 7000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 22,
             "name": "the API call returns status code 200",
             "match": {
               "arguments": [
@@ -76,170 +62,11 @@
               "location": "stepDef.addPlace.the_api_call_returns_status_code(int)"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 963000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "the \"status\" in response body is \"OK\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"status\"",
-                  "offset": 4
-                },
-                {
-                  "val": "\"OK\"",
-                  "offset": 33
-                }
-              ],
-              "location": "stepDef.addPlace.the_in_response_body_is(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 17000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "the \"scope\" in response body is \"APP\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"scope\"",
-                  "offset": 4
-                },
-                {
-                  "val": "\"APP\"",
-                  "offset": 32
-                }
-              ],
-              "location": "stepDef.addPlace.the_in_response_body_is(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
           }
-        ]
-      },
-      {
-        "start_timestamp": "2021-09-27T23:38:43.411Z",
-        "line": 13,
-        "name": "Verify Place is being successfully added using AddPlaceApi",
-        "description": "",
-        "id": "validation-place-api;verify-place-is-being-successfully-added-using-addplaceapi;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
+        ],
+        "tags": [
           {
-            "result": {
-              "duration": 8000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "Add place payload with AID Coching , Dhaka, Ban and Bengali",
-            "match": {
-              "arguments": [
-                {
-                  "val": "AID Coching",
-                  "offset": 23
-                },
-                {
-                  "val": "Dhaka, Ban",
-                  "offset": 37
-                },
-                {
-                  "val": "Bengali",
-                  "offset": 52
-                }
-              ],
-              "location": "stepDef.addPlace.add_place_payload_with_and(java.lang.String,java.lang.String,java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1555000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user calls \"AddPlaceAPI\" with \"Post\" http request",
-            "match": {
-              "arguments": [
-                {
-                  "val": "AddPlaceAPI",
-                  "offset": 12
-                },
-                {
-                  "val": "Post",
-                  "offset": 31
-                }
-              ],
-              "location": "stepDef.addPlace.user_calls_something_with_something_http_request(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "the API call returns status code 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 33
-                }
-              ],
-              "location": "stepDef.addPlace.the_api_call_returns_status_code(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 50000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "the \"status\" in response body is \"OK\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"status\"",
-                  "offset": 4
-                },
-                {
-                  "val": "\"OK\"",
-                  "offset": 33
-                }
-              ],
-              "location": "stepDef.addPlace.the_in_response_body_is(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 50000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "the \"scope\" in response body is \"APP\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"scope\"",
-                  "offset": 4
-                },
-                {
-                  "val": "\"APP\"",
-                  "offset": 32
-                }
-              ],
-              "location": "stepDef.addPlace.the_in_response_body_is(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
+            "name": "@DeletePlace"
           }
         ]
       }

@@ -26,4 +26,9 @@ public class TestData {
 
         return ap;
     }
+
+    public String getDeletePayload(String placeId){
+
+       return  "{\r\n        \"place_id\": \""+placeId+"\"\r\n}";
+    }
 }
