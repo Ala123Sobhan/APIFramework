@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-09-27T23:35:28.328Z",
+        "start_timestamp": "2021-09-27T23:38:36.464Z",
         "line": 12,
         "name": "Verify Place is being successfully added using AddPlaceApi",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1656000000,
+              "duration": 1678000000,
               "status": "passed"
             },
             "line": 4,
@@ -39,7 +39,7 @@
           },
           {
             "result": {
-              "duration": 3379000000,
+              "duration": 4249000000,
               "status": "passed"
             },
             "line": 5,
@@ -61,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 3000000,
+              "duration": 4000000,
               "status": "passed"
             },
             "line": 6,
@@ -79,7 +79,7 @@
           },
           {
             "result": {
-              "duration": 829000000,
+              "duration": 963000000,
               "status": "passed"
             },
             "line": 7,
@@ -124,7 +124,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-09-27T23:35:34.247Z",
+        "start_timestamp": "2021-09-27T23:38:43.411Z",
         "line": 13,
         "name": "Verify Place is being successfully added using AddPlaceApi",
         "description": "",
@@ -134,7 +134,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6000000,
+              "duration": 8000000,
               "status": "passed"
             },
             "line": 4,
@@ -160,7 +160,7 @@
           },
           {
             "result": {
-              "duration": 1283000000,
+              "duration": 1555000000,
               "status": "passed"
             },
             "line": 5,
@@ -199,7 +199,7 @@
           },
           {
             "result": {
-              "duration": 34000000,
+              "duration": 50000000,
               "status": "passed"
             },
             "line": 7,
@@ -221,7 +221,7 @@
           },
           {
             "result": {
-              "duration": 41000000,
+              "duration": 50000000,
               "status": "passed"
             },
             "line": 8,

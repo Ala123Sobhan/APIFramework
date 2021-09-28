@@ -1,5 +1,6 @@
 package stepDef;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -51,19 +52,18 @@ public class addPlace extends Utils {
 
         if (method.equalsIgnoreCase("Post")) {
             response = res.when()
-                    .post(resourcesAPI.getResource())
-                    .then().spec(responseSpec).extract().response();
+                    .post(resourcesAPI.getResource());
         }
         else if(method.equalsIgnoreCase("Get"))
         {
             response = res.when()
-                    .get(resourcesAPI.getResource())
-                    .then().spec(responseSpec).extract().response();
+                    .get(resourcesAPI.getResource());
+
         }
         else {
             response = res.when()
-                    .delete(resourcesAPI.getResource())
-                    .then().spec(responseSpec).extract().response();
+                    .delete(resourcesAPI.getResource());
+
         }
     }
 
@@ -75,9 +75,28 @@ public class addPlace extends Utils {
 
     @Then("the {string} in response body is {string}")
     public void the_in_response_body_is(String key, String value) {
-        String apiRes = response.asString();
-        JsonPath js = new JsonPath(apiRes);
-        Assert.assertEquals(js.get(key), value);
+
+        Assert.assertEquals(getJsonPath(response, key ), value);
+    }
+
+    @And("^the \"([^\"]*)\" maps to the (.+) when user calls \"([^\"]*)\"$")
+    public void the_something_maps_to_the_when_user_calls_something(String place_id, String Expectedname, String resource) throws Throwable {
+       //System.out.print(place_id+" , "+name+" , "+resource);
+
+        APIResources resourcesAPI = APIResources.valueOf(resource);
+
+        String placeID = getJsonPath(response, place_id);
+        res = given().spec(getRequestSpecification())
+                .queryParam("place_id",placeID);
+
+        response = res.when().get(resourcesAPI.getResource());
+
+        System.out.println(response.asString());
+
+        String actualName = getJsonPath(response, "name");
+        Assert.assertEquals(actualName, Expectedname);
+
+
     }
 
 
