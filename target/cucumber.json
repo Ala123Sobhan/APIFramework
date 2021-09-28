@@ -3,7 +3,18 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-09-28T18:44:17.801Z",
+        "start_timestamp": "2021-09-28T22:55:52.877Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9906000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.Hooks.beforeDeleteScenario()"
+            }
+          }
+        ],
         "line": 19,
         "name": "Verify Delete Place API is working",
         "description": "",
@@ -13,7 +24,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1520000000,
+              "duration": 6000000,
               "status": "passed"
             },
             "line": 20,
@@ -25,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 4455000000,
+              "duration": 3479000000,
               "status": "passed"
             },
             "line": 21,
@@ -47,7 +58,6 @@
           },
           {
             "result": {
-              "duration": 7000000,
               "status": "passed"
             },
             "line": 22,
@@ -62,6 +72,28 @@
               "location": "stepDef.addPlace.the_api_call_returns_status_code(int)"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 39000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the \"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 4
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDef.addPlace.the_in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [

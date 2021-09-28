@@ -1,0 +1,9 @@
+
+
+# run with tags
+mvn clean
+mvn verify -Dcucumber.filter.tags="@AddPlace"
+
+# run the whole project
+mvn clean
+mvn verify

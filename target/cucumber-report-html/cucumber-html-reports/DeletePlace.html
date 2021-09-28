@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 
   
-<title>Cucumber-JVM Reports  - Tag: @AddPlace</title>
+<title>Cucumber-JVM Reports  - Tag: @DeletePlace</title>
 
 </head>
 <body>
@@ -76,7 +76,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>APIFramework</td>
                           <td>1</td>
-                        <td>28 Sep 2021, 14:40</td>
+                        <td>28 Sep 2021, 18:56</td>
           </tr>
         </tbody>
       </table>
@@ -122,17 +122,17 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">@AddPlace</td>
-                    <td  class="passed"    >2</td>
+          <td class="tagname">@DeletePlace</td>
+                    <td  class="passed"    >1</td>
           <td >0</td>
-          <td class="total">2</td>
-          <td      class="passed"    >12</td>
-          <td >0</td>
-          <td >0</td>
+          <td class="total">1</td>
+          <td      class="passed"    >4</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">12</td>
-          <td class="duration" data-value="22417000000">22s 417ms</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">4</td>
+          <td class="duration" data-value="3524000000">3s 524ms</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -157,15 +157,15 @@ $(document).ready(function() {
   
   
 <div class="tags indention">
-       <a href="AddPlace.html">@AddPlace</a>
+       <a href="DeletePlace.html">@DeletePlace</a>
   </div>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
 <div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Verify Place is being successfully added using AddPlaceApi</span>
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Verify Delete Place API is working</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -176,190 +176,42 @@ $(document).ready(function() {
 
   <div id="element-1" class="collapse collapsable-details ">
     
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
-    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
+      
 <div class="brief passed">
-  <span class="keyword indention">Steps</span>
+  <span class="keyword indention">Hooks</span>
   <span class="name"></span>
   
 
        <i class="chevron fa fa-fw"></i>
   </div>
 
-  </div>
-
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">Add place payload with Frame House , Bronx, NY and English</span>
-  
-  <span class="lead-duration duration">4s 572ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">user calls "AddPlaceAPI" with "Post" http request</span>
-  
-  <span class="lead-duration duration">6s 186ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">the API call returns status code 200</span>
-  
-  <span class="lead-duration duration">007ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the "status" in response body is "OK"</span>
-  
-  <span class="lead-duration duration">2s</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the "scope" in response body is "APP"</span>
-  
-  <span class="lead-duration duration">064ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the "place_id" maps to the Frame House when user calls "getPlaceAPI"</span>
-  
-  <span class="lead-duration duration">3s 560ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-      </div>
-</div>
-
-
-    
-
-  </div>
-</div>
-
-                  
-<div class="element">
-      <div class="indention">
-      <a href="file-src-test-java-features-placeValidation-feature.html">View Feature</a> <i>Validation Place API</i>
     </div>
-  
-  
-<div class="tags indention">
-       <a href="AddPlace.html">@AddPlace</a>
+
+    <div id="before-2" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">stepDef.Hooks.beforeDeleteScenario()</span>
+                        
+  <span class="lead-duration duration">9s 906ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
   </div>
-
-
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
-    
-<div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Verify Place is being successfully added using AddPlaceApi</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-3" class="collapse collapsable-details ">
-    
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -371,14 +223,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-4" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">Add place payload with AID Coching , Dhaka, Ban and Bengali</span>
+  <span class="name">Delete Place API payload is ready</span>
   
-  <span class="lead-duration duration">033ms</span>
+  <span class="lead-duration duration">006ms</span>
 
   </div>
 
@@ -397,9 +249,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">user calls "AddPlaceAPI" with "Post" http request</span>
+  <span class="name">user calls "deletePlaceAPI" with "Post" http request</span>
   
-  <span class="lead-duration duration">1s 560ms</span>
+  <span class="lead-duration duration">3s 479ms</span>
 
   </div>
 
@@ -441,49 +293,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">the "status" in response body is "OK"</span>
   
-  <span class="lead-duration duration">082ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the "scope" in response body is "APP"</span>
-  
-  <span class="lead-duration duration">044ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the "place_id" maps to the AID Coching when user calls "getPlaceAPI"</span>
-  
-  <span class="lead-duration duration">4s 309ms</span>
+  <span class="lead-duration duration">039ms</span>
 
   </div>
 

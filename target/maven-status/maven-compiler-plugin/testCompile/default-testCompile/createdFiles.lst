@@ -1,6 +1,7 @@
 pojo\AddAPlace.class
 resources\TestData.class
 stepDef\addPlace.class
+stepDef\Hooks.class
 pojo\location.class
 resources\APIResources.class
 resources\Utils.class

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="25217" started-at="2021-09-28T14:39:52 EDT" finished-at="2021-09-28T14:40:18 EDT">
+  <suite name="Surefire suite" duration-ms="15137" started-at="2021-09-28T18:55:51 EDT" finished-at="2021-09-28T18:56:06 EDT">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@7fac631b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="25217" started-at="2021-09-28T14:39:52 EDT" finished-at="2021-09-28T14:40:18 EDT">
+    <test name="Surefire test" duration-ms="15137" started-at="2021-09-28T18:55:51 EDT" finished-at="2021-09-28T18:56:06 EDT">
       <class name="TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner@7fac631b]" name="setUpClass" is-config="true" duration-ms="1576" started-at="2021-09-28T14:39:53 EDT" finished-at="2021-09-28T14:39:54 EDT">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner@7fac631b]" name="setUpClass" is-config="true" duration-ms="773" started-at="2021-09-28T18:55:51 EDT" finished-at="2021-09-28T18:55:52 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@7fac631b]" name="runScenario" duration-ms="17132" started-at="2021-09-28T14:39:54 EDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-28T14:40:11 EDT">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@7fac631b]" name="runScenario" duration-ms="13910" started-at="2021-09-28T18:55:52 EDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-28T18:56:06 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify Place is being successfully added using AddPlaceApi"]]>
+                <![CDATA["Verify Delete Place API is working"]]>
               </value>
             </param>
             <param index="1">
@@ -30,23 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@7fac631b]" name="runScenario" duration-ms="6044" started-at="2021-09-28T14:40:11 EDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-28T14:40:17 EDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify Place is being successfully added using AddPlaceApi"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Validation Place API]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner@7fac631b]" name="tearDownClass" is-config="true" duration-ms="303" started-at="2021-09-28T14:40:17 EDT" finished-at="2021-09-28T14:40:18 EDT">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner@7fac631b]" name="tearDownClass" is-config="true" duration-ms="350" started-at="2021-09-28T18:56:06 EDT" finished-at="2021-09-28T18:56:06 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
