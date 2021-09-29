@@ -1,6 +1,6 @@
 Feature: Validation Place API
 
-  @AddPlace
+  @AddPlace @Regression
   Scenario Outline: Verify Place is being successfully added using AddPlaceApi
     Given Add place payload with <Name> , <Address> and <Language>
     When user calls "AddPlaceAPI" with "Post" http request
@@ -15,7 +15,7 @@ Feature: Validation Place API
       | AID Coching | Dhaka, Ban | Bengali  |
 
 
-    @DeletePlace
+    @DeletePlace @Regression
     Scenario: Verify Delete Place API is working
       Given Delete Place API payload is ready
       When user calls "deletePlaceAPI" with "Post" http request
